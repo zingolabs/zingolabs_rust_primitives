@@ -13,6 +13,26 @@ pub type UnderlyingTowerService = BoxCloneService<
     hyper_util::client::legacy::Error,
 >;
 
+/// Network types
+#[derive(Clone, Copy)]
+pub enum Network {
+    /// Regtest
+    Regtest,
+    /// Testnet
+    Testnet,
+    /// Mainnet
+    Mainnet,
+}
+
+impl std::fmt::Display for Network {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        match self {
+            Self::Mainnet => write!(f, "Mainnet"),
+            Self::Testnet => write!(f, "Testnet"),
+            Self::Regtest => write!(f, "Regtest"),
+        }
+    }
+}
 /// Activation heights for local network upgrades
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub struct ActivationHeights {
