@@ -1,6 +1,17 @@
 [package]
-name = "zlp_common"
+name = "zingo_common"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+http = { workspace = true }
+http-body-util = { workspace = true }
+hyper = { workspace = true }
+hyper-util = { workspace = true }
+prost = { workspace = true }
+tonic = { workspace = true }
+tower = { workspace = true }
+portpicker = { workspace = true }
+
+zcash_primitives = { workspace = true }
+zcash_protocol = { workspace = true }
