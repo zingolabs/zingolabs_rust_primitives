@@ -1,0 +1,3 @@
+[workspace]
+members = ["zlp_common"]
+resolver = "2"
