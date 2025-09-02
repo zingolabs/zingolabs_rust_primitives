@@ -50,6 +50,8 @@ pub struct ActivationHeights {
     pub nu5: BlockHeight,
     /// Nu6 network upgrade activation height
     pub nu6: BlockHeight,
+    /// Nu6_1 https://github.com/zcash/zips/blob/main/zips/zip-1016.md network upgrade activation height
+    pub nu6_1: BlockHeight,
 }
 
 impl Default for ActivationHeights {
@@ -62,6 +64,7 @@ impl Default for ActivationHeights {
             canopy: 1.into(),
             nu5: 1.into(),
             nu6: 1.into(),
+            nu6_1: 1.into(),
         }
     }
 }
@@ -77,6 +80,7 @@ impl ActivationHeights {
             NetworkUpgrade::Canopy => self.canopy,
             NetworkUpgrade::Nu5 => self.nu5,
             NetworkUpgrade::Nu6 => self.nu6,
+            NetworkUpgrade::Nu6_1 => self.nu6_1,
         }
     }
 }
