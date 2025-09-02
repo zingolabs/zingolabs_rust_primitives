@@ -8,7 +8,7 @@ http-body-util = "0.1"
 hyper = { version = "1.7", features = ["full"] }
 hyper-util = { version = "0.1", features = ["full"] }
 prost = "0.14"
-tonic = "0.14"
+tonic = "0.12"
 tower = "0.5"
 portpicker = "0.1"
 
