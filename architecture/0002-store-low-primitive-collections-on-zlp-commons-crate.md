@@ -1,4 +1,4 @@
-# 2. store low-primitive collections on zlp_commons crate
+# 2. store low-primitive collections in zlp_common package
 
 Date: 2025-09-02
 
